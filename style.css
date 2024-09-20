@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    /* height: 30rem; */
+    position: relative;
+}
+
+.logo {
+    height: 2rem;
+    color: blue;
+}
+
+nav {
+    height: 2rem;
+    background-color: blue;
+    color: aliceblue;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-image img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.center-word {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    height: 20rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: blue;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+}
+
+.container>figure {
+    width: 20%;
+}
+
+.container>div {
+    border: 3px solid blue;
+    /* height: 20rem; */
+    width: 20rem;
+}
+
+.container img {
+    /* width: 200px; */
+    width: 100%;
+    height: 200px;
+    /* aspect-ratio: 1; */
+    object-fit: cover;
+}
+
+figcaption {
+    vertical-align: sub;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        width: 20rem;
+    }
+
+    .container>figure {
+        /* width: 30%; */
+        margin-left: 10%;
+        margin-right: 10%;
+        /* height: 15rem; */
+        text-align: center;
+      
+    }
+.container>div {
+      margin-top: 2rem;
+}
+    .container img {
+        height: 200px;
+        /* width: 100%; */
+        object-fit: cover;
+    }
+
+    main {
+        /* height: 100rem; */
+    }
+
+    ul {
+        display: block;
+        margin-right: 20px;
+    }
+
+    nav {
+        height: 6rem;
+    }
+
+    li {
+        text-align: right;
+    }
+}
